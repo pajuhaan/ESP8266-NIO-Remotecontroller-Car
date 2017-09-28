@@ -14,8 +14,8 @@ Get NIO from this link: http://niomatic.com
 
 Parse Json:
 ```javascript
-JsonObject& root = jsonBuffer.parseObject(payload);
-	int led  = root["led"];
-    int m1   = root["m1"];
-    int m2   = root["m2"];
+JsonObject &root = jsonBuffer.parseObject(payload);
+int led  = root["led"];
+int m1   = root["m1"];
+int m2   = root["m2"];
 ```
