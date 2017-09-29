@@ -17,13 +17,9 @@
 
 #include <ArduinoJson.h>
 
-#define MOTOR_1_A     15   //D8
-#define MOTOR_2_A   12      //D6
-#define LED_BLUE    13      /D7
+#define PIN_LED     15   //D8
+#define PIN_WATER    5      //D1
 
-
-#define MOTOR_1_B     16  //D0
-#define MOTOR_2_B     4   //D2
 
 
 #define USE_SERIAL Serial
@@ -45,7 +41,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
       break;
     case WStype_CONNECTED: {
         IPAddress ip = webSocket.remoteIP(num);
-        USE_SERIAL.printf("[%u] Connected from %d.%d.%d.%d url: %s\n", num, ip[0], ip[1], ip[2], ip[3], payload);
+        USE_SERIAL.printf("[%u] Connected from %d.%d.%d.%d url: %s\n", num, ip[0], ip[1], ip[2], ip[3], payload); USE_SERIAL.flush();
 
         // send message to client
         webSocket.sendTXT(num, "Connected");
@@ -54,24 +50,6 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
     case WStype_TEXT:
       USE_SERIAL.printf("[%u] get Text: %s\n", num, payload);
 
-      /*  if(payload[0] == 'p') {
-            // we get RGB data
-
-            //  analogWriteResolution(8);
-             // analogWrite(11, map(sensorVal, 0, 1023, 0 ,255));
-
-            // decode rgb data
-            uint32_t rgb = (uint32_t) strtol((const char *) &payload[1], NULL, 16);
-
-            analogWrite(MOTOR_1_A,    ((rgb >> 16) & 0xFF)*4);
-            analogWrite(MOTOR_2_A,  ((rgb >> 8) & 0xFF)*4);
-            analogWrite(LED_BLUE,   ((rgb >> 0) & 0xFF)*4);
-        }*/
-
-
-      //   char json[] = "{\"led\":200,\"m1\":150,\"m2\":180}";
-      //char json[] = "{\"sensor\":\"gps\",\"led\":200,\"motor\":[52,150]}";
-
       StaticJsonBuffer<200> jsonBuffer;
 
       JsonObject& root = jsonBuffer.parseObject(payload);
@@ -79,82 +57,28 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
       //const char* sensor = root["sensor"];
 
 
-      //........... JOY STICK ...........
-    /*  int led          = root["led"];
-      int amp    = root["amp"];
-      int teta   = root["teta"];
-      float teta_radian = degreesToRadians(teta);
-      int delta = amp * cos(teta_radian);
-      int m1 = delta;
-      int m2 = amp;
-      if (m1 > 1023)m1 = 1023;
-      if (m2 > 1023)m2 = 1023;
 
-      if (teta_radian > 0) {
-        analogWrite(MOTOR_2_A,   abs( 0));
-        analogWrite(MOTOR_2_B,  abs(m2));
-      } else {
-        analogWrite(MOTOR_2_A,   abs( m2));
-        analogWrite(MOTOR_2_B,  abs(0));
-      }
-      if (delta > 0) {
-        analogWrite(MOTOR_1_A,   abs( m1));
-        analogWrite(MOTOR_1_B,  abs(0));
-
-      } else {
-        analogWrite(MOTOR_1_A,   abs( 0));
-        analogWrite(MOTOR_1_B,  abs(m1));
-
-      }
-*/
 
       //........... Gyroscop ...........
-      int led          = root["led"];
-      int m1    = root["m1"];
-      int m2   = root["m2"];
+      bool led_mod          = root["led"];
+      bool water_mode    = root["water"];
 
-      if (m1 > 1023)m1 = 1023;
-      if (m2 > 1023)m2 = 1023;
-      if (m1 < -1023)m1 = -1023;
-      if (m2 < -1023)m2 = -1023;
-      if (m2 > 0) {
-        analogWrite(MOTOR_2_A,   abs( 0));
-        analogWrite(MOTOR_2_B,  abs(m2));
+      if (led_mod) {
+        digitalWrite(PIN_LED, 1);
+
       } else {
-        analogWrite(MOTOR_2_A,   abs( m2));
-        analogWrite(MOTOR_2_B,  abs(0));
+        digitalWrite(PIN_LED, 0);
       }
-      if (m1 > 0) {
-        analogWrite(MOTOR_1_A,   abs( m1));
-        analogWrite(MOTOR_1_B,  abs(0));
+
+      if (water_mode) {
+        digitalWrite(PIN_WATER, 1);
 
       } else {
-        analogWrite(MOTOR_1_A,   abs( 0));
-        analogWrite(MOTOR_1_B,  abs(m1));
-
+        digitalWrite(PIN_WATER, 0);
       }
 
 
 
-
-      USE_SERIAL.printf("Motor: m1=%i  m2=%i    \n", m1, m2);
-
-      analogWrite(LED_BLUE,   abs(led));
-      /*
-        if(teta_radian>0){
-        analogWrite(MOTOR_1_B,  abs(0));
-                      analogWrite(MOTOR_2_B,  abs(0));
-
-          analogWrite(MOTOR_1_A,   abs( m1));
-                      analogWrite(MOTOR_2_A,  abs(m2));
-        }else{
-        analogWrite(MOTOR_1_A,   abs( 0));
-                      analogWrite(MOTOR_2_A,  abs(0));
-
-        analogWrite(MOTOR_1_B,  abs(m2));
-                      analogWrite(MOTOR_2_B,  abs(m2));
-        }
-      */
 
 
 
@@ -196,20 +120,15 @@ void setup() {
     delay(100);
   }
 
+  pinMode(PIN_LED, OUTPUT);
+  pinMode(PIN_WATER, OUTPUT);
 
 
-  pinMode(MOTOR_1_A, OUTPUT);
-  pinMode(MOTOR_2_A, OUTPUT);
-  pinMode(LED_BLUE, OUTPUT);
-  pinMode(MOTOR_1_B, OUTPUT);
-  pinMode(MOTOR_2_B, OUTPUT);
+  digitalWrite(PIN_LED, 0);
+  digitalWrite(PIN_WATER, 0);
 
 
-  digitalWrite(MOTOR_1_A, 0);
-  digitalWrite(MOTOR_2_A, 0);
-  digitalWrite(LED_BLUE, 0);
-  digitalWrite(MOTOR_1_B, 0);
-  digitalWrite(MOTOR_2_B, 0);
+
 
   WiFiMulti.addAP("HODAK", "1442514425");
 
@@ -237,15 +156,13 @@ void setup() {
   MDNS.addService("http", "tcp", 80);
   MDNS.addService("ws", "tcp", 81);
 
-  digitalWrite(MOTOR_1_A, 0);
-  digitalWrite(MOTOR_2_A, 0);
-  digitalWrite(LED_BLUE, 0);
-  digitalWrite(MOTOR_1_B, 0);
-  digitalWrite(MOTOR_2_B, 0);
+  digitalWrite(PIN_LED, 0);
+  digitalWrite(PIN_WATER, 0);
+
 
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-
+  USE_SERIAL.flush();
 }
 
 void loop() {
