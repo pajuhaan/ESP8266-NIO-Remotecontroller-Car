@@ -1,0 +1,1405 @@
+{
+  "modules": [
+    {
+      "name": "UI_SEEKBAR",
+      "param": {
+        "hp": 0.086139895,
+        "idx": 5,
+        "r": 0.0,
+        "wp": 0.85807294,
+        "xp": 0.078125,
+        "yp": 0.24222799
+      },
+      "R": "NON",
+      "UID": 22,
+      "vr": 1.0,
+      "X": 808.0,
+      "Y": 574.0,
+      "mpo": {
+        "max_val": 1023,
+        "def_val": 0,
+        "seekbar_value": 0
+      },
+      "vis": {
+        "bg color": 0,
+        "corner": 0,
+        "elevation": 0,
+        "lock": false,
+        "printable": true,
+        "title": "LED"
+      }
+    },
+    {
+      "name": "TOGGLE_Switch",
+      "param": {
+        "hp": 0.09067357,
+        "idx": 1,
+        "r": 0.0,
+        "wp": 0.18554688,
+        "xp": 0.3372396,
+        "yp": 0.38536268
+      },
+      "R": "NON",
+      "UID": 2,
+      "vr": 1.0,
+      "X": 88.0,
+      "Y": 1038.0,
+      "mpo": {
+        "def_state": false
+      },
+      "vis": {
+        "bg color": 0,
+        "corner": 0,
+        "elevation": 0,
+        "lock": false,
+        "printable": true,
+        "title": "Start/Stop"
+      }
+    },
+    {
+      "name": "Accelerometer",
+      "R": "NON",
+      "UID": 0,
+      "vr": 1.0,
+      "X": 278.0,
+      "Y": 1004.0
+    },
+    {
+      "name": "CONSTANT_FLOAT",
+      "R": "NON",
+      "UID": 21,
+      "vr": 1.0,
+      "X": 514.0,
+      "Y": 1148.0,
+      "mpo": {
+        "value": -113.0
+      }
+    },
+    {
+      "name": "MULTIPLIY",
+      "R": "NON",
+      "UID": 18,
+      "vr": 1.0,
+      "X": 713.0,
+      "Y": 1159.0
+    },
+    {
+      "name": "CONSTANT_FLOAT",
+      "R": "NON",
+      "UID": 20,
+      "vr": 1.0,
+      "X": 476.0,
+      "Y": 864.0,
+      "mpo": {
+        "value": -140.0
+      }
+    },
+    {
+      "name": "MULTIPLIY",
+      "R": "NON",
+      "UID": 16,
+      "vr": 1.0,
+      "X": 712.0,
+      "Y": 792.0
+    },
+    {
+      "name": "TO_INTEGER",
+      "R": "NON",
+      "UID": 13,
+      "vr": 1.0,
+      "X": 924.0,
+      "Y": 811.0
+    },
+    {
+      "name": "JSON_Builder",
+      "R": "NON",
+      "UID": 17,
+      "vr": 1.0,
+      "X": 1101.0,
+      "Y": 895.0,
+      "mpo": {
+        "DB_Setting_Value_name": "%led{INTEGER}%%m1{INTEGER}%%m2{INTEGER}%"
+      }
+    },
+    {
+      "name": "TO_STRING",
+      "R": "NON",
+      "UID": 19,
+      "vr": 1.0,
+      "X": 1314.0,
+      "Y": 907.0
+    },
+    {
+      "name": "TOGGLE_Switch",
+      "param": {
+        "hp": 0.09196891,
+        "idx": 4,
+        "r": 0.0,
+        "wp": 0.1686198,
+        "xp": 0.09375,
+        "yp": 0.39054403
+      },
+      "R": "NON",
+      "UID": 5,
+      "vr": 1.0,
+      "X": 1233.0,
+      "Y": 665.0,
+      "mpo": {
+        "def_state": false
+      },
+      "vis": {
+        "bg color": 0,
+        "corner": 0,
+        "elevation": 0,
+        "lock": false,
+        "printable": true,
+        "title": "connect"
+      }
+    },
+    {
+      "name": "CONSTANT_INTEGER",
+      "R": "NON",
+      "UID": 4,
+      "vr": 1.0,
+      "X": 1206.0,
+      "Y": 593.0,
+      "mpo": {
+        "value": 81
+      }
+    },
+    {
+      "name": "CONSTANT_STRING",
+      "R": "NON",
+      "UID": 8,
+      "vr": 1.0,
+      "X": 1196.0,
+      "Y": 461.0,
+      "mpo": {
+        "value": "192.168.3.3"
+      }
+    },
+    {
+      "name": "BLUETOOTH_STANDALONE",
+      "R": "NON",
+      "UID": 3,
+      "vr": 1.0,
+      "X": 1460.0,
+      "Y": 615.0
+    },
+    {
+      "name": "UI_TEXTVIEW",
+      "param": {
+        "hp": 0.11398964,
+        "idx": 3,
+        "r": 0.0,
+        "wp": 0.859375,
+        "xp": 0.07096354,
+        "yp": 0.031088082
+      },
+      "R": "NON",
+      "UID": 10,
+      "vr": 1.0,
+      "X": 1675.0,
+      "Y": 823.0,
+      "mpo": {
+        "text_default": "sample text",
+        "gravity": 17,
+        "font_size": 14,
+        "text_color": -12303292,
+        "font": "Yekaan.ttf"
+      },
+      "vis": {
+        "bg color": 0,
+        "corner": 0,
+        "elevation": 0,
+        "lock": false,
+        "printable": true,
+        "title": "Status"
+      }
+    },
+    {
+      "name": "UI_TEXTVIEW",
+      "param": {
+        "hp": 0.098445594,
+        "idx": 2,
+        "r": 0.0,
+        "wp": 0.8483073,
+        "xp": 0.067708336,
+        "yp": 0.12629534
+      },
+      "R": "NON",
+      "UID": 9,
+      "vr": 1.0,
+      "X": 1720.0,
+      "Y": 504.0,
+      "mpo": {
+        "text_default": "sample text",
+        "gravity": 17,
+        "font_size": 14,
+        "text_color": -12303292,
+        "font": "Yekaan.ttf"
+      },
+      "vis": {
+        "bg color": 0,
+        "corner": 0,
+        "elevation": 0,
+        "lock": false,
+        "printable": true,
+        "title": "Response "
+      }
+    },
+    {
+      "name": "TO_INTEGER",
+      "R": "NON",
+      "UID": 12,
+      "vr": 1.0,
+      "X": 883.0,
+      "Y": 1092.0
+    }
+  ],
+  "paths": [
+    [
+      {
+        "uid": 1125,
+        "id": 5,
+        "dir": "Output",
+        "Label": "TrOut",
+        "position": {
+          "order": 2,
+          "count": 2,
+          "pos": "Right",
+          "teta": 5.497787143782138,
+          "x": 110,
+          "y": 110
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 1233,
+        "Y": 665
+      },
+      [
+        {
+          "uid": 100,
+          "id": 3,
+          "dir": "Input",
+          "Label": "TR_Conn",
+          "position": {
+            "order": 5,
+            "count": 7,
+            "pos": "Left",
+            "teta": 2.019595277307724,
+            "x": 11,
+            "y": 164
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 1460,
+          "Y": 615
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 20,
+        "dir": "Output",
+        "Label": "out",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 160,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$5",
+          "data": "FLOAT"
+        },
+        "X": 476,
+        "Y": 864
+      },
+      [
+        {
+          "uid": 2,
+          "id": 16,
+          "dir": "Input",
+          "Label": "In2",
+          "position": {
+            "order": 2,
+            "count": 3,
+            "pos": "Left",
+            "teta": 1.5707963267948966,
+            "x": 0,
+            "y": 75
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$5",
+            "data": "FLOAT"
+          },
+          "X": 712,
+          "Y": 792
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 5,
+        "dir": "Output",
+        "Label": "out",
+        "position": {
+          "order": 1,
+          "count": 2,
+          "pos": "Right",
+          "teta": 3.9269908169872414,
+          "x": 110,
+          "y": 19
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$2",
+          "data": "BOOLEAN"
+        },
+        "X": 1233,
+        "Y": 665
+      },
+      [
+        {
+          "uid": 3,
+          "id": 3,
+          "dir": "Input",
+          "Label": "Connect",
+          "position": {
+            "order": 4,
+            "count": 7,
+            "pos": "Left",
+            "teta": 1.5707963267948966,
+            "x": 0,
+            "y": 115
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$2",
+            "data": "BOOLEAN"
+          },
+          "X": 1460,
+          "Y": 615
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1225,
+        "id": 3,
+        "dir": "Output",
+        "Label": "Receive",
+        "position": {
+          "order": 4,
+          "count": 4,
+          "pos": "Right",
+          "teta": 5.890486225480862,
+          "x": 159,
+          "y": 221
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 1460,
+        "Y": 615
+      },
+      [
+        {
+          "uid": 100,
+          "id": 10,
+          "dir": "Input",
+          "Label": "Trigin",
+          "position": {
+            "order": 2,
+            "count": 2,
+            "pos": "Left",
+            "teta": 2.356194490192345,
+            "x": 19,
+            "y": 110
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 1675,
+          "Y": 823
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 17,
+        "dir": "Output",
+        "Label": "Json out",
+        "position": {
+          "order": 1,
+          "count": 2,
+          "pos": "Right",
+          "teta": 3.9269908169872414,
+          "x": 145,
+          "y": 24
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$8",
+          "data": "JSON"
+        },
+        "X": 1101,
+        "Y": 895
+      },
+      [
+        {
+          "uid": 1,
+          "id": 19,
+          "dir": "Input",
+          "Label": "Object",
+          "position": {
+            "order": 1,
+            "count": 0,
+            "pos": "Left",
+            "teta": 1.5707963267948966,
+            "x": 0,
+            "y": 0
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$12",
+            "data": "OBJECT"
+          },
+          "X": 1314,
+          "Y": 907
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 0,
+        "dir": "Output",
+        "Label": "X",
+        "position": {
+          "order": 1,
+          "count": 4,
+          "pos": "Right",
+          "teta": 3.5342917352885173,
+          "x": 117,
+          "y": 6
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$5",
+          "data": "FLOAT"
+        },
+        "X": 278,
+        "Y": 1004
+      },
+      [
+        {
+          "uid": 1,
+          "id": 16,
+          "dir": "Input",
+          "Label": "In1",
+          "position": {
+            "order": 1,
+            "count": 3,
+            "pos": "Left",
+            "teta": 0.5235987755982988,
+            "x": 37,
+            "y": 10
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$5",
+            "data": "FLOAT"
+          },
+          "X": 712,
+          "Y": 792
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1026,
+        "id": 19,
+        "dir": "Output",
+        "Label": "String",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 110,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$7",
+          "data": "STRING"
+        },
+        "X": 1314,
+        "Y": 907
+      },
+      [
+        {
+          "uid": 10,
+          "id": 3,
+          "dir": "Input",
+          "Label": "Command",
+          "position": {
+            "order": 6,
+            "count": 7,
+            "pos": "Left",
+            "teta": 2.4683942278205517,
+            "x": 43,
+            "y": 204
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$7",
+            "data": "STRING"
+          },
+          "X": 1460,
+          "Y": 615
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1034,
+        "id": 3,
+        "dir": "Output",
+        "Label": "Response",
+        "position": {
+          "order": 3,
+          "count": 4,
+          "pos": "Right",
+          "teta": 5.105088062083414,
+          "x": 221,
+          "y": 159
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$7",
+          "data": "STRING"
+        },
+        "X": 1460,
+        "Y": 615
+      },
+      [
+        {
+          "uid": 1,
+          "id": 10,
+          "dir": "Input",
+          "Label": "Text",
+          "position": {
+            "order": 1,
+            "count": 2,
+            "pos": "Left",
+            "teta": 0.7853981633974483,
+            "x": 19,
+            "y": 19
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$7",
+            "data": "STRING"
+          },
+          "X": 1675,
+          "Y": 823
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 2,
+        "dir": "Output",
+        "Label": "out",
+        "position": {
+          "order": 1,
+          "count": 2,
+          "pos": "Right",
+          "teta": 3.9269908169872414,
+          "x": 110,
+          "y": 19
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$2",
+          "data": "BOOLEAN"
+        },
+        "X": 88,
+        "Y": 1038
+      },
+      [
+        {
+          "uid": 1,
+          "id": 0,
+          "dir": "Input",
+          "Label": "Enable",
+          "position": {
+            "order": 1,
+            "count": 2,
+            "pos": "Left",
+            "teta": 0.7853981633974483,
+            "x": 24,
+            "y": 24
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$2",
+            "data": "BOOLEAN"
+          },
+          "X": 278,
+          "Y": 1004
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1026,
+        "id": 12,
+        "dir": "Output",
+        "Label": "Integer",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 110,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$1",
+          "data": "INTEGER"
+        },
+        "X": 883,
+        "Y": 1092
+      },
+      [
+        {
+          "uid": 4,
+          "id": 17,
+          "dir": "Input",
+          "Label": "m2",
+          "position": {
+            "order": 3,
+            "count": 4,
+            "pos": "Left",
+            "teta": 1.9634954084936207,
+            "x": 6,
+            "y": 117
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$1",
+            "data": "INTEGER"
+          },
+          "X": 1101,
+          "Y": 895
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1125,
+        "id": 17,
+        "dir": "Output",
+        "Label": "Trigger",
+        "position": {
+          "order": 2,
+          "count": 2,
+          "pos": "Right",
+          "teta": 5.497787143782138,
+          "x": 145,
+          "y": 145
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 1101,
+        "Y": 895
+      },
+      [
+        {
+          "uid": 101,
+          "id": 3,
+          "dir": "Input",
+          "Label": "TR_Send",
+          "position": {
+            "order": 7,
+            "count": 7,
+            "pos": "Left",
+            "teta": 2.9171931783333793,
+            "x": 89,
+            "y": 227
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 1460,
+          "Y": 615
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1026,
+        "id": 0,
+        "dir": "Output",
+        "Label": "Y",
+        "position": {
+          "order": 2,
+          "count": 4,
+          "pos": "Right",
+          "teta": 4.319689898685965,
+          "x": 163,
+          "y": 52
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$5",
+          "data": "FLOAT"
+        },
+        "X": 278,
+        "Y": 1004
+      },
+      [
+        {
+          "uid": 2,
+          "id": 18,
+          "dir": "Input",
+          "Label": "In2",
+          "position": {
+            "order": 2,
+            "count": 3,
+            "pos": "Left",
+            "teta": 1.5707963267948966,
+            "x": 0,
+            "y": 75
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$5",
+            "data": "FLOAT"
+          },
+          "X": 713,
+          "Y": 1159
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1026,
+        "id": 13,
+        "dir": "Output",
+        "Label": "Integer",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 110,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$1",
+          "data": "INTEGER"
+        },
+        "X": 924,
+        "Y": 811
+      },
+      [
+        {
+          "uid": 3,
+          "id": 17,
+          "dir": "Input",
+          "Label": "m1",
+          "position": {
+            "order": 2,
+            "count": 4,
+            "pos": "Left",
+            "teta": 1.1780972450961724,
+            "x": 6,
+            "y": 52
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$1",
+            "data": "INTEGER"
+          },
+          "X": 1101,
+          "Y": 895
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1224,
+        "id": 0,
+        "dir": "Output",
+        "Label": "Trigout",
+        "position": {
+          "order": 4,
+          "count": 4,
+          "pos": "Right",
+          "teta": 5.890486225480862,
+          "x": 117,
+          "y": 163
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 278,
+        "Y": 1004
+      },
+      [
+        {
+          "uid": 100,
+          "id": 16,
+          "dir": "Input",
+          "Label": "Trigin",
+          "position": {
+            "order": 3,
+            "count": 3,
+            "pos": "Left",
+            "teta": 2.617993877991494,
+            "x": 37,
+            "y": 139
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 712,
+          "Y": 792
+        },
+        {
+          "uid": 100,
+          "id": 18,
+          "dir": "Input",
+          "Label": "Trigin",
+          "position": {
+            "order": 3,
+            "count": 3,
+            "pos": "Left",
+            "teta": 2.617993877991494,
+            "x": 37,
+            "y": 139
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 713,
+          "Y": 1159
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 22,
+        "dir": "Output",
+        "Label": "Value",
+        "position": {
+          "order": 1,
+          "count": 2,
+          "pos": "Right",
+          "teta": 3.9269908169872414,
+          "x": 110,
+          "y": 19
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$1",
+          "data": "INTEGER"
+        },
+        "X": 808,
+        "Y": 574
+      },
+      [
+        {
+          "uid": 2,
+          "id": 17,
+          "dir": "Input",
+          "Label": "led",
+          "position": {
+            "order": 1,
+            "count": 4,
+            "pos": "Left",
+            "teta": 0.39269908169872414,
+            "x": 52,
+            "y": 6
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$1",
+            "data": "INTEGER"
+          },
+          "X": 1101,
+          "Y": 895
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 16,
+        "dir": "Output",
+        "Label": "Out",
+        "position": {
+          "order": 1,
+          "count": 2,
+          "pos": "Right",
+          "teta": 3.9269908169872414,
+          "x": 128,
+          "y": 21
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$5",
+          "data": "FLOAT"
+        },
+        "X": 712,
+        "Y": 792
+      },
+      [
+        {
+          "uid": 1,
+          "id": 13,
+          "dir": "Input",
+          "Label": "Object",
+          "position": {
+            "order": 1,
+            "count": 0,
+            "pos": "Left",
+            "teta": 1.5707963267948966,
+            "x": 0,
+            "y": 0
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$12",
+            "data": "OBJECT"
+          },
+          "X": 924,
+          "Y": 811
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1224,
+        "id": 16,
+        "dir": "Output",
+        "Label": "Trigout",
+        "position": {
+          "order": 2,
+          "count": 2,
+          "pos": "Right",
+          "teta": 5.497787143782138,
+          "x": 128,
+          "y": 128
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 712,
+        "Y": 792
+      },
+      [
+        {
+          "uid": 100,
+          "id": 17,
+          "dir": "Input",
+          "Label": "Trigger",
+          "position": {
+            "order": 4,
+            "count": 4,
+            "pos": "Left",
+            "teta": 2.748893571891069,
+            "x": 52,
+            "y": 163
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 1101,
+          "Y": 895
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 4,
+        "dir": "Output",
+        "Label": "out",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 160,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$1",
+          "data": "INTEGER"
+        },
+        "X": 1206,
+        "Y": 593
+      },
+      [
+        {
+          "uid": 2,
+          "id": 3,
+          "dir": "Input",
+          "Label": "Port",
+          "position": {
+            "order": 2,
+            "count": 7,
+            "pos": "Left",
+            "teta": 0.6731984257692414,
+            "x": 43,
+            "y": 25
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$1",
+            "data": "INTEGER"
+          },
+          "X": 1460,
+          "Y": 615
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1125,
+        "id": 2,
+        "dir": "Output",
+        "Label": "TrOut",
+        "position": {
+          "order": 2,
+          "count": 2,
+          "pos": "Right",
+          "teta": 5.497787143782138,
+          "x": 110,
+          "y": 110
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 88,
+        "Y": 1038
+      },
+      [
+        {
+          "uid": 100,
+          "id": 0,
+          "dir": "Input",
+          "Label": "Trigin",
+          "position": {
+            "order": 2,
+            "count": 2,
+            "pos": "Left",
+            "teta": 2.356194490192345,
+            "x": 24,
+            "y": 145
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 278,
+          "Y": 1004
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1224,
+        "id": 3,
+        "dir": "Output",
+        "Label": "Status",
+        "position": {
+          "order": 2,
+          "count": 4,
+          "pos": "Right",
+          "teta": 4.319689898685965,
+          "x": 221,
+          "y": 70
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$11",
+          "data": "TRIGER"
+        },
+        "X": 1460,
+        "Y": 615
+      },
+      [
+        {
+          "uid": 100,
+          "id": 9,
+          "dir": "Input",
+          "Label": "Trigin",
+          "position": {
+            "order": 2,
+            "count": 2,
+            "pos": "Left",
+            "teta": 2.356194490192345,
+            "x": 19,
+            "y": 110
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$11",
+            "data": "TRIGER"
+          },
+          "X": 1720,
+          "Y": 504
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 18,
+        "dir": "Output",
+        "Label": "Out",
+        "position": {
+          "order": 1,
+          "count": 2,
+          "pos": "Right",
+          "teta": 3.9269908169872414,
+          "x": 128,
+          "y": 21
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$5",
+          "data": "FLOAT"
+        },
+        "X": 713,
+        "Y": 1159
+      },
+      [
+        {
+          "uid": 1,
+          "id": 12,
+          "dir": "Input",
+          "Label": "Object",
+          "position": {
+            "order": 1,
+            "count": 0,
+            "pos": "Left",
+            "teta": 1.5707963267948966,
+            "x": 0,
+            "y": 0
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$12",
+            "data": "OBJECT"
+          },
+          "X": 883,
+          "Y": 1092
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 21,
+        "dir": "Output",
+        "Label": "out",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 160,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$5",
+          "data": "FLOAT"
+        },
+        "X": 514,
+        "Y": 1148
+      },
+      [
+        {
+          "uid": 1,
+          "id": 18,
+          "dir": "Input",
+          "Label": "In1",
+          "position": {
+            "order": 1,
+            "count": 3,
+            "pos": "Left",
+            "teta": 0.5235987755982988,
+            "x": 37,
+            "y": 10
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$5",
+            "data": "FLOAT"
+          },
+          "X": 713,
+          "Y": 1159
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 8,
+        "dir": "Output",
+        "Label": "out",
+        "position": {
+          "order": 1,
+          "count": 0,
+          "pos": "Right",
+          "teta": -1.5707963267948966,
+          "x": 160,
+          "y": 0
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$7",
+          "data": "STRING"
+        },
+        "X": 1196,
+        "Y": 461
+      },
+      [
+        {
+          "uid": 1,
+          "id": 3,
+          "dir": "Input",
+          "Label": "IP",
+          "position": {
+            "order": 1,
+            "count": 7,
+            "pos": "Left",
+            "teta": 0.2243994752564138,
+            "x": 89,
+            "y": 2
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$7",
+            "data": "STRING"
+          },
+          "X": 1460,
+          "Y": 615
+        }
+      ]
+    ],
+    [
+      {
+        "uid": 1025,
+        "id": 3,
+        "dir": "Output",
+        "Label": "Status",
+        "position": {
+          "order": 1,
+          "count": 4,
+          "pos": "Right",
+          "teta": 3.5342917352885173,
+          "x": 159,
+          "y": 8
+        },
+        "model": "SINGLE",
+        "type": {
+          "type": "nio.gcore.types.enums.TAGs.TAG$7",
+          "data": "STRING"
+        },
+        "X": 1460,
+        "Y": 615
+      },
+      [
+        {
+          "uid": 1,
+          "id": 9,
+          "dir": "Input",
+          "Label": "Text",
+          "position": {
+            "order": 1,
+            "count": 2,
+            "pos": "Left",
+            "teta": 0.7853981633974483,
+            "x": 19,
+            "y": 19
+          },
+          "model": "SINGLE",
+          "type": {
+            "type": "nio.gcore.types.enums.TAGs.TAG$7",
+            "data": "STRING"
+          },
+          "X": 1720,
+          "Y": 504
+        }
+      ]
+    ]
+  ],
+  "meta": {
+    "Encrypt": false,
+    "HEIGHT": 2662,
+    "IMAGE_ICON": {
+      "type": "android.graphics.Bitmap",
+      "filename": "F0"
+    },
+    "PID": "PID",
+    "SCREEN_DESIGN_REFRENCE_WIDTH": 2048,
+    "Title": "",
+    "UIHEIGHT": -1,
+    "UIWIDTH": -1,
+    "VER": 1.0,
+    "VID": "NIO",
+    "WIDTH": 1996,
+    "ZIP": false,
+    "UILT": "PERCENT_LAYOUT"
+  }
+}
