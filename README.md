@@ -28,5 +28,5 @@ Download RC car with gyro.nio and open in your tablet.
 
 <p align="center">
   <img src="https://github.com/pajuhaan/ESP8266-NIO-Remotecontroller-Car/blob/master/images/car1.jpg?raw=true" width="350"/>
-  <img src="https://github.com/pajuhaan/ESP8266-NIO-Remotecontroller-Car/blob/master/images/car3.jpg?raw=true" width="350"/>
+  <img src="https://github.com/pajuhaan/ESP8266-NIO-Remotecontroller-Car/blob/master/images/car2.jpg?raw=true" width="350"/>
 </p>
