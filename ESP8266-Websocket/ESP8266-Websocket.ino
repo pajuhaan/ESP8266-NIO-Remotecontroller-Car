@@ -18,12 +18,16 @@
 #include <ArduinoJson.h>
 
 #define MOTOR_1_A     15   //D8
+#define MOTOR_1_B     16  //D0
+
 #define MOTOR_2_A   12      //D6
+#define MOTOR_2_B     4   //D2
+
 #define LED_BLUE    13      /D7
 
 
-#define MOTOR_1_B     16  //D0
-#define MOTOR_2_B     4   //D2
+
+
 
 
 #define USE_SERIAL Serial
