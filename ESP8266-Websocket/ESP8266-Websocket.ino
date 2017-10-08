@@ -215,7 +215,7 @@ void setup() {
   digitalWrite(MOTOR_1_B, 0);
   digitalWrite(MOTOR_2_B, 0);
 
-  WiFiMulti.addAP("HODAK", "1442514425");
+  WiFiMulti.addAP("SSID", "PASSWORD");
 
   while (WiFiMulti.run() != WL_CONNECTED) {
     delay(100);
